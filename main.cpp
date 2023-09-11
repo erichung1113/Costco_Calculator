@@ -29,11 +29,11 @@ int main(){
             Total[who]+=AvgItmePrice;
         }
         cout << "----Current----\n";
-        for(int i=1;i<=4;i++) cout << "person " << i << " : " << Total[i] << '\n';
+        for(int i=1;i<=NumberOfPeople;i++) cout << "person " << i << " : " << Total[i] << '\n';
         cout << "---------------\n";
     }
 
     cout << "---------Total----------\n";
-    for(int i=1;i<=4;i++) cout << "|    person " << i << " : " << left << setw(8) << Total[i] << "|" << '\n';
+    for(int i=1;i<=NumberOfPeople;i++) cout << "|    person " << i << " : " << left << setw(8) << Total[i] << "|" << '\n';
     cout << "------------------------\n";
 }
