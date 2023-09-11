@@ -7,9 +7,10 @@ int main(){
     cin >> NumberOfPeople;
     vector<int> Total(NumberOfPeople+1);
     string line;
+    cout << "Please enter format:[price 1th_person 2th_person 3th_person...(0 for all)] or q for quit\n";
     while(getline(cin,line)){
         if(line == "") continue;
-        if(line == "end") break;
+        if(line == "q") break;
         stringstream ss(line);
         int ItemPrice;
         ss >> ItemPrice;
